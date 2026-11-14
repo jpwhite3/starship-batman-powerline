@@ -1,0 +1,165 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](joker_purple)\
+$os\
+$username\
+[](bg:cape_blue fg:joker_purple)\
+$directory\
+[](fg:cape_blue bg:signal_yellow)\
+$git_branch\
+$git_status\
+[](fg:signal_yellow bg:robin_green)\
+$c\
+$cpp\
+$elixir\
+$elm\
+$golang\
+$gradle\
+$haskell\
+$java\
+$julia\
+$maven\
+$nodejs\
+$bun\
+$nim\
+$rust\
+$scala\
+[](fg:robin_green bg:alert_crimson)\
+$docker_context\
+[](fg:alert_crimson bg:gotham_midnight)\
+$time\
+[ ](fg:gotham_midnight)\
+"""
+
+palette = 'batman_tas'
+
+[palettes.batman_tas]
+joker_purple = '#805ad5'
+cape_blue = '#0f3460'
+signal_yellow = '#ecc94b'
+robin_green = '#2f855a'
+alert_crimson = '#c53030'
+gotham_midnight = '#16213e'
+gotham_dark = '#1a1a2e'
+gotham_fog = '#e2e8f0'
+silver_highlight = '#cbd5e0'
+
+# Disable the blank line at the start of the prompt
+# add_newline = false
+
+[username]
+show_always = true
+style_user = "bg:joker_purple fg:gotham_fog"
+style_root = "bg:joker_purple fg:gotham_fog"
+format = '[$user ]($style)'
+disabled = false
+
+[os]
+style = "bg:joker_purple fg:gotham_fog"
+disabled = true # Disabled by default
+
+[directory]
+style = "bg:cape_blue fg:gotham_fog"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[c]
+symbol = " "
+style = "bg:robin_green fg:gotham_fog"
+format = '[ $symbol ($version) ]($style)'
+
+[cpp]
+symbol = " "
+style = "bg:robin_green fg:gotham_fog"
+format = '[ $symbol ($version) ]($style)'
+
+[docker_context]
+symbol = " "
+style = "bg:alert_crimson fg:gotham_fog"
+format = '[ $symbol $context ]($style)'
+
+[elixir]
+symbol = " "
+style = "bg:robin_green fg:gotham_fog"
+format = '[ $symbol ($version) ]($style)'
+
+[elm]
+symbol = " "
+style = "bg:robin_green fg:gotham_fog"
+format = '[ $symbol ($version) ]($style)'
+
+[git_branch]
+symbol = ""
+style = "bg:signal_yellow fg:gotham_dark"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "bg:signal_yellow fg:gotham_dark"
+format = '[$all_status$ahead_behind ]($style)'
+
+[golang]
+symbol = " "
+style = "bg:robin_green fg:gotham_fog"
+format = '[ $symbol ($version) ]($style)'
+
+[gradle]
+style = "bg:robin_green fg:gotham_fog"
+format = '[ $symbol ($version) ]($style)'
+
+[haskell]
+symbol = " "
+style = "bg:robin_green fg:gotham_fog"
+format = '[ $symbol ($version) ]($style)'
+
+[java]
+symbol = " "
+style = "bg:robin_green fg:gotham_fog"
+format = '[ $symbol ($version) ]($style)'
+
+[julia]
+symbol = " "
+style = "bg:robin_green fg:gotham_fog"
+format = '[ $symbol ($version) ]($style)'
+
+[maven]
+style = "bg:robin_green fg:gotham_fog"
+format = '[ $symbol ($version) ]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:robin_green fg:gotham_fog"
+format = '[ $symbol ($version) ]($style)'
+
+[bun]
+symbol = ""
+style = "bg:robin_green fg:gotham_fog"
+format = '[ $symbol ($version) ]($style)'
+
+[nim]
+symbol = "󰆥 "
+style = "bg:robin_green fg:gotham_fog"
+format = '[ $symbol ($version) ]($style)'
+
+[rust]
+symbol = ""
+style = "bg:robin_green fg:gotham_fog"
+format = '[ $symbol ($version) ]($style)'
+
+[scala]
+symbol = " "
+style = "bg:robin_green fg:gotham_fog"
+format = '[ $symbol ($version) ]($style)'
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:gotham_midnight fg:silver_highlight"
+format = '[ ♥ $time ]($style)'
