@@ -6,6 +6,10 @@
 
 > A high-contrast, Dark Deco [Starship](https://starship.rs/) prompt preset inspired by **Batman: The Animated Series (1990s)** and built upon the popular `pastel-powerline` layout.
 
+<p align="center">
+  <img src="assets/preview.svg" alt="Starship Batman Powerline Preview" width="100%">
+</p>
+
 ---
 
 ## The Dark Knight Prompt
@@ -17,9 +21,22 @@
 - **100% Feature Parity**: Retains all Powerline glyphs, directory substitutions, git status indicators, Docker context, and 14 programming language runtimes from `pastel-powerline`.
 - **Reusable Starship Palette**: Configured cleanly with a central `[palettes.batman_tas]` table.
 
-```text
- jpwhite  …/code/batman-tas-theme   main   v26.13.1  ♥ 14:35 
-```
+---
+
+## 🎨 Batman TAS Color Palette
+
+<p align="center">
+  <img src="assets/palette.svg" alt="Batman TAS Color Palette" width="100%">
+</p>
+
+| Segment | Role | Background Color | Foreground Color |
+|---|---|---|---|
+| **OS & Username** | Start Cap / Identity | <img src="assets/swatches/joker-purple.svg" width="16" height="16" valign="middle" /> `#805ad5` Joker Purple | <img src="assets/swatches/gotham-fog.svg" width="16" height="16" valign="middle" /> `#e2e8f0` Gotham Fog |
+| **Directory** | Path & Context | <img src="assets/swatches/cape-blue.svg" width="16" height="16" valign="middle" /> `#0f3460` Batman's Cape | <img src="assets/swatches/gotham-fog.svg" width="16" height="16" valign="middle" /> `#e2e8f0` Gotham Fog |
+| **Git Branch & Status** | Version Control | <img src="assets/swatches/signal-yellow.svg" width="16" height="16" valign="middle" /> `#ecc94b` Bat-Signal Yellow | <img src="assets/swatches/gotham-dark.svg" width="16" height="16" valign="middle" /> `#1a1a2e` Gotham Dark |
+| **Language Runtimes** | C, Go, Node, Rust, etc. | <img src="assets/swatches/robin-green.svg" width="16" height="16" valign="middle" /> `#2f855a` Robin Emerald | <img src="assets/swatches/gotham-fog.svg" width="16" height="16" valign="middle" /> `#e2e8f0` Gotham Fog |
+| **Docker Context** | Containers | <img src="assets/swatches/alert-crimson.svg" width="16" height="16" valign="middle" /> `#c53030` Alert Crimson | <img src="assets/swatches/gotham-fog.svg" width="16" height="16" valign="middle" /> `#e2e8f0` Gotham Fog |
+| **Time & End Cap** | System Clock / Close | <img src="assets/swatches/gotham-midnight.svg" width="16" height="16" valign="middle" /> `#16213e` Gotham Midnight | <img src="assets/swatches/silver-highlight.svg" width="16" height="16" valign="middle" /> `#cbd5e0` Silver Highlight |
 
 ---
 
@@ -50,21 +67,6 @@ git clone https://github.com/jpwhite3/starship-batman-powerline.git
 # Copy into Starship's configuration directory
 cp starship-batman-powerline/starship.toml ~/.config/starship.toml
 ```
-
----
-
-## 🎨 Batman TAS Color Palette
-
-The colors in this preset are drawn directly from the 1990s Batman animated series:
-
-| Segment | Role | Background | Foreground | Preview |
-|---|---|---|---|---|
-| **OS & Username** | Start Cap / Identity | Joker Purple (`#805ad5`) | Gotham Fog (`#e2e8f0`) | ` username ` |
-| **Directory** | Path & Context | Batman's Cape (`#0f3460`) | Gotham Fog (`#e2e8f0`) | `  ~/projects ` |
-| **Git Branch & Status** | Version Control | Bat-Signal Yellow (`#ecc94b`) | Gotham Dark (`#1a1a2e`) | `   main ` |
-| **Language Runtimes** | C, Go, Node, Rust, etc. | Robin Emerald (`#2f855a`) | Gotham Fog (`#e2e8f0`) | `   v26 ` |
-| **Docker Context** | Containers | Alert Crimson (`#c53030`) | Gotham Fog (`#e2e8f0`) | `   default ` |
-| **Time & End Cap** | System Clock / Close | Gotham Midnight (`#16213e`) | Silver Highlight (`#cbd5e0`) | `  ♥ 14:35  ` |
 
 ---
 
