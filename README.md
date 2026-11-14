@@ -85,4 +85,4 @@ Love this aesthetic in your terminal? Bring Gotham City into your code editor to
 
 ## 📄 License
 
-[MIT](LICENSE) © [John White (jpwhite3)](https://github.com/jpwhite3)
+[MIT](LICENSE) © [JP White](https://github.com/jpwhite3)
