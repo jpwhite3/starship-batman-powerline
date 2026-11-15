@@ -7,7 +7,9 @@
 > A high-contrast, Dark Deco [Starship](https://starship.rs/) prompt preset inspired by **Batman: The Animated Series (1990s)** and built upon the popular `pastel-powerline` layout.
 
 <p align="center">
-  <img src="assets/preview.svg" alt="Starship Batman Powerline Preview" width="100%">
+  <img src="assets/demo.gif" alt="Starship Batman Powerline Animated Demo" width="100%">
+  <br>
+  <em>Live 10-second interactive terminal walkthrough &bull; <a href="assets/demo.mp4">Watch HD Video (1080p MP4)</a></em>
 </p>
 
 ---
@@ -16,10 +18,15 @@
 
 `pastel-powerline` is one of Starship's most popular powerline presets, but light pastel backgrounds with default white terminal text can wash out and strain the eyes.
 
+<p align="center">
+  <img src="assets/preview.svg" alt="Starship Batman Powerline Static Vector Preview" width="100%">
+</p>
+
 **Starship Batman Powerline** fixes legibility issues by pairing colors from the authentic 1990s Batman TAS palette:
 - **High-contrast readability**: Dark Gotham Midnight text on bright Bat-Signal Yellow; luminous Gotham Fog text on deep villain purple, cape blue, and robin green.
 - **100% Feature Parity**: Retains all Powerline glyphs, directory substitutions, git status indicators, Docker context, and 14 programming language runtimes from `pastel-powerline`.
 - **Reusable Starship Palette**: Configured cleanly with a central `[palettes.batman_tas]` table.
+- **Animated Terminal Showcase**: Experience the prompt in motion with the animated demo above or download the [1080p demo video](assets/demo.mp4).
 
 ---
 

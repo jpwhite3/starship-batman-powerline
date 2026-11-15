@@ -13,3 +13,11 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Worktrees and SDD scratch
+.worktrees/
+.superpowers/
+
+# Python cache
+__pycache__/
+*.pyc
